@@ -21,6 +21,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddScoped<IMailService, MailService>();
 builder.Services.AddScoped<IOtpService, OtpService>();
+builder.Services.AddScoped<IFileService, FileService>();
 
 builder.Services.AddCors(options =>
 {
