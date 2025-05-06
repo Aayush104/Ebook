@@ -9,6 +9,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Net;
 using System.Security.Claims;
 using System.Text;
+using static System.Net.WebRequestMethods;
 
 namespace BookProject.Controllers
 {
@@ -203,6 +204,7 @@ namespace BookProject.Controllers
             }
 
             await _userManager.AddToRoleAsync(user, "Staff");
+            await _mailService.SendStaffMail(user.Email, user.FullName);
 
 
             return Ok(new ApiResponseDto
