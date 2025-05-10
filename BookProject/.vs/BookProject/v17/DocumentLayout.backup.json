@@ -106,8 +106,7 @@
               "RelativeToolTip": "BookProject\\IService\\IMailService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:08:58.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T04:08:58.688Z"
             },
             {
               "$type": "Document",
@@ -119,8 +118,7 @@
               "RelativeToolTip": "BookProject\\IService\\IFileService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:08:57.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T04:08:57.661Z"
             },
             {
               "$type": "Document",
@@ -130,7 +128,7 @@
               "RelativeDocumentMoniker": "BookProject\\Controllers\\UserController.cs",
               "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\UserController.cs",
               "RelativeToolTip": "BookProject\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAowMcAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAowLwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T04:05:28.124Z",
               "EditorCaption": ""
@@ -141,12 +139,11 @@
               "Title": "MailService.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Service\\MailService.cs",
               "RelativeDocumentMoniker": "BookProject\\Service\\MailService.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Service\\MailService.cs*",
-              "RelativeToolTip": "BookProject\\Service\\MailService.cs*",
+              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Service\\MailService.cs",
+              "RelativeToolTip": "BookProject\\Service\\MailService.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAYwD8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:01:55.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T04:01:55.43Z"
             },
             {
               "$type": "Document",
@@ -290,8 +287,7 @@
               "RelativeToolTip": "BookProject\\Controllers\\AdminController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:09:59.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T15:09:59.95Z"
             },
             {
               "$type": "Document",
@@ -303,8 +299,7 @@
               "RelativeToolTip": "BookProject\\Controllers\\BlogController.cs",
               "ViewState": "AgIAALUAAAAAAAAAAAAkwHMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:05:12.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T15:05:12.409Z"
             }
           ]
         },
