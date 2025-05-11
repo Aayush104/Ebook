@@ -1,4 +1,5 @@
 using BookProject.Data;
+using BookProject.Hubss;
 using BookProject.IService;
 using BookProject.Model;
 using BookProject.Service;
@@ -18,6 +19,7 @@ Env.Load();
 
 
 builder.Services.AddControllers();
+builder.Services.AddSignalR();
 
 builder.Services.AddScoped<IMailService, MailService>();
 builder.Services.AddScoped<IOtpService, OtpService>();
@@ -131,5 +133,5 @@ app.UseCors("AllowLocalhost5173");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
-
+app.MapHub<NotificationHub>("/notificationhub");
 app.Run();

@@ -20,6 +20,10 @@ namespace BookProject.Data
         public DbSet<Otp> Otps { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<Bookmark> BookMarks { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<Announce> Announces { get; set; }
+        public DbSet<Review> Reviews { get; set; }
         public DbSet<Cart> Carts { get; set; }
 
 
@@ -45,6 +49,25 @@ namespace BookProject.Data
             .HasForeignKey(o => o.BookId)
             .OnDelete(DeleteBehavior.Cascade);
 
+            builder.Entity<Order>()
+       .HasOne(o => o.User)
+       .WithMany(u => u.Orders)
+       .HasForeignKey(o => o.UserId)
+       .OnDelete(DeleteBehavior.Cascade);
+
+            builder.Entity<OrderItem>()
+         .HasOne(o => o.Book)
+         .WithMany(u => u.OrderItems)
+         .HasForeignKey(o => o.BookId)
+         .OnDelete(DeleteBehavior.Cascade);
+
+
+            builder.Entity<OrderItem>()
+         .HasOne(o => o.Order)
+         .WithMany(u => u.OrderItems)
+         .HasForeignKey(o => o.OrderId)
+         .OnDelete(DeleteBehavior.Cascade);
+
 
             builder.Entity<Cart>()
              .HasOne(o => o.User)
@@ -57,6 +80,18 @@ namespace BookProject.Data
           .WithMany(u => u.Carts)
           .HasForeignKey(o => o.BookId)
           .OnDelete(DeleteBehavior.Cascade);
+
+            builder.Entity<Review>()
+       .HasOne(o => o.User)
+       .WithMany(u => u.Reviews)
+       .HasForeignKey(o => o.UserId)
+       .OnDelete(DeleteBehavior.Cascade);
+
+            builder.Entity<Review>()
+            .HasOne(o => o.Book)
+            .WithMany(u => u.Reviews)
+            .HasForeignKey(o => o.BookId)
+            .OnDelete(DeleteBehavior.Cascade);
 
             builder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
         }

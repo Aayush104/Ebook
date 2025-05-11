@@ -63,5 +63,10 @@ namespace BookProject.Model
         public ICollection<Bookmark> Bookmarks { get; set; } = new List<Bookmark>();
         public ICollection<Cart> Carts { get; set; } = new List<Cart>();
 
+        public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+
+        public ICollection<Review> Reviews { get; set; } = new List<Review>();
+
+
     }
 }

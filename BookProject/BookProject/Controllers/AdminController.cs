@@ -24,7 +24,7 @@ namespace BookProject.Controllers
         }
 
         [HttpPost("AddBook")]
-        public async Task<IActionResult> AddBook([FromForm] AddBookDto addBookDto)
+        public async Task<IActionResult> AddBook(AddBookDto addBookDto)
         {
             try
             {

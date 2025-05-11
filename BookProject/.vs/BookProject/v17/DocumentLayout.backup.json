@@ -3,72 +3,44 @@
   "WorkspaceRootPath": "D:\\Books Project\\BookProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\iservice\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\iservice\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\controllers\\announcementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\controllers\\announcementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\iservice\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\iservice\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\service\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\service\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\dto\\doannouncementdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\dto\\doannouncementdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\service\\announcementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\service\\announcementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\controllers\\whitelistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\controllers\\whitelistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\hubss\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\hubss\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\bookproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\bookproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\service\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\service\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\iservice\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\iservice\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\dto\\addtocartrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\dto\\addtocartrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\dto\\cartitemresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\dto\\cartitemresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\dto\\removecartitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\dto\\removecartitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\dto\\bookfilterparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\dto\\bookfilterparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\dto\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\dto\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\dto\\getbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\dto\\getbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\dto\\paginationparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\dto\\paginationparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\service\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\service\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -77,8 +49,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 66,
-          "SelectedChildIndex": 6,
+          "DockedHeight": 43,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,184 +70,40 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DoAnnouncementDto.cs",
+              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Dto\\DoAnnouncementDto.cs",
+              "RelativeDocumentMoniker": "BookProject\\Dto\\DoAnnouncementDto.cs",
+              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Dto\\DoAnnouncementDto.cs",
+              "RelativeToolTip": "BookProject\\Dto\\DoAnnouncementDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:19:56.886Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IMailService.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\IService\\IMailService.cs",
-              "RelativeDocumentMoniker": "BookProject\\IService\\IMailService.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\IService\\IMailService.cs",
-              "RelativeToolTip": "BookProject\\IService\\IMailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
+              "Title": "AnnouncementController.cs",
+              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\AnnouncementController.cs",
+              "RelativeDocumentMoniker": "BookProject\\Controllers\\AnnouncementController.cs",
+              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\AnnouncementController.cs",
+              "RelativeToolTip": "BookProject\\Controllers\\AnnouncementController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwA4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:08:58.688Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IFileService.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\IService\\IFileService.cs",
-              "RelativeDocumentMoniker": "BookProject\\IService\\IFileService.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\IService\\IFileService.cs",
-              "RelativeToolTip": "BookProject\\IService\\IFileService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:08:57.661Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "BookProject\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\UserController.cs",
-              "RelativeToolTip": "BookProject\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAowLwAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:05:28.124Z",
+              "WhenOpened": "2025-05-11T11:16:19.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MailService.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Service\\MailService.cs",
-              "RelativeDocumentMoniker": "BookProject\\Service\\MailService.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Service\\MailService.cs",
-              "RelativeToolTip": "BookProject\\Service\\MailService.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAYwD8AAAAUAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AnnouncementService.cs",
+              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Service\\AnnouncementService.cs",
+              "RelativeDocumentMoniker": "BookProject\\Service\\AnnouncementService.cs",
+              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Service\\AnnouncementService.cs",
+              "RelativeToolTip": "BookProject\\Service\\AnnouncementService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:01:55.43Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WhiteListController.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\WhiteListController.cs",
-              "RelativeDocumentMoniker": "BookProject\\Controllers\\WhiteListController.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\WhiteListController.cs",
-              "RelativeToolTip": "BookProject\\Controllers\\WhiteListController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwDAAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:45:58.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FileService.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Service\\FileService.cs",
-              "RelativeDocumentMoniker": "BookProject\\Service\\FileService.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Service\\FileService.cs",
-              "RelativeToolTip": "BookProject\\Service\\FileService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:40:03.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CartItemResponseDto.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Dto\\CartItemResponseDto.cs",
-              "RelativeDocumentMoniker": "BookProject\\Dto\\CartItemResponseDto.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Dto\\CartItemResponseDto.cs",
-              "RelativeToolTip": "BookProject\\Dto\\CartItemResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:29:15.019Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RemoveCartItemRequestDto.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Dto\\RemoveCartItemRequestDto.cs",
-              "RelativeDocumentMoniker": "BookProject\\Dto\\RemoveCartItemRequestDto.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Dto\\RemoveCartItemRequestDto.cs",
-              "RelativeToolTip": "BookProject\\Dto\\RemoveCartItemRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:26:15.731Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddToCartRequestDto.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Dto\\AddToCartRequestDto.cs",
-              "RelativeDocumentMoniker": "BookProject\\Dto\\AddToCartRequestDto.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Dto\\AddToCartRequestDto.cs",
-              "RelativeToolTip": "BookProject\\Dto\\AddToCartRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:23:08.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "BookProject\\Controllers\\CartController.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\CartController.cs",
-              "RelativeToolTip": "BookProject\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:21:57.752Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PagedResult.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Dto\\PagedResult.cs",
-              "RelativeDocumentMoniker": "BookProject\\Dto\\PagedResult.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Dto\\PagedResult.cs",
-              "RelativeToolTip": "BookProject\\Dto\\PagedResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:17:08.846Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GetBookDto.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Dto\\GetBookDto.cs",
-              "RelativeDocumentMoniker": "BookProject\\Dto\\GetBookDto.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Dto\\GetBookDto.cs",
-              "RelativeToolTip": "BookProject\\Dto\\GetBookDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:16:16.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BookFilterParams.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Dto\\BookFilterParams.cs",
-              "RelativeDocumentMoniker": "BookProject\\Dto\\BookFilterParams.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Dto\\BookFilterParams.cs",
-              "RelativeToolTip": "BookProject\\Dto\\BookFilterParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:12:51.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PaginationParams.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Dto\\PaginationParams.cs",
-              "RelativeDocumentMoniker": "BookProject\\Dto\\PaginationParams.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Dto\\PaginationParams.cs",
-              "RelativeToolTip": "BookProject\\Dto\\PaginationParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:12:13.449Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AccessController.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\AccessController.cs",
-              "RelativeDocumentMoniker": "BookProject\\Controllers\\AccessController.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\AccessController.cs",
-              "RelativeToolTip": "BookProject\\Controllers\\AccessController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:10:26.979Z"
+              "WhenOpened": "2025-05-11T11:13:53.997Z"
             },
             {
               "$type": "Document",
@@ -285,26 +113,88 @@
               "RelativeDocumentMoniker": "BookProject\\Controllers\\AdminController.cs",
               "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\AdminController.cs",
               "RelativeToolTip": "BookProject\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwBkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:09:59.95Z"
+              "WhenOpened": "2025-05-11T11:12:09.586Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BlogController.cs",
-              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\BlogController.cs",
-              "RelativeDocumentMoniker": "BookProject\\Controllers\\BlogController.cs",
-              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\BlogController.cs",
-              "RelativeToolTip": "BookProject\\Controllers\\BlogController.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAkwHMAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Program.cs",
+              "RelativeDocumentMoniker": "BookProject\\Program.cs",
+              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Program.cs",
+              "RelativeToolTip": "BookProject\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:05:12.409Z"
+              "WhenOpened": "2025-05-11T11:09:33.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookProject.csproj",
+              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\BookProject.csproj",
+              "RelativeDocumentMoniker": "BookProject\\BookProject.csproj",
+              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\BookProject.csproj",
+              "RelativeToolTip": "BookProject\\BookProject.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-11T11:09:06.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NotificationHub.cs",
+              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Hubss\\NotificationHub.cs",
+              "RelativeDocumentMoniker": "BookProject\\Hubss\\NotificationHub.cs",
+              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Hubss\\NotificationHub.cs",
+              "RelativeToolTip": "BookProject\\Hubss\\NotificationHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:07:44.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IMailService.cs",
+              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\IService\\IMailService.cs",
+              "RelativeDocumentMoniker": "BookProject\\IService\\IMailService.cs",
+              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\IService\\IMailService.cs",
+              "RelativeToolTip": "BookProject\\IService\\IMailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:05:35.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MailService.cs",
+              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Service\\MailService.cs",
+              "RelativeDocumentMoniker": "BookProject\\Service\\MailService.cs",
+              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Service\\MailService.cs",
+              "RelativeToolTip": "BookProject\\Service\\MailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:03:53.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "BookProject\\Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "BookProject\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAmwAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:02:47.626Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedHeight": 6,
+          "DockedHeight": 29,
           "SelectedChildIndex": -1,
           "Children": [
             {
