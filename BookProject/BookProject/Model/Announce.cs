@@ -18,6 +18,7 @@ namespace BookProject.Model
         public bool IsMarked { get; set; } = false;
 
         public DateTime AnnouncemnetDateTime { get; set; }
+        public DateTime AnnouncementEndDateTime { get; set; }
         public bool IsAnnounced { get; set; } = false;
     }
 }

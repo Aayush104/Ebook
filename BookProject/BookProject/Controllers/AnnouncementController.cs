@@ -5,6 +5,7 @@ using BookProject.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookProject.Controllers
 {
@@ -38,7 +39,8 @@ namespace BookProject.Controllers
             {
                 Title = announcementDto.Title,
                 Description = announcementDto.Description,
-                AnnouncemnetDateTime = announcementDto.AnnouncementDateTime
+                AnnouncemnetDateTime = announcementDto.AnnouncementDateTime,
+                AnnouncementEndDateTime = announcementDto.AnnouncementEndDateTime
             };
 
             // Save to DB
@@ -53,6 +55,42 @@ namespace BookProject.Controllers
                 Message = "Announcement created successfully.",
                 StatusCode = 200
             });
+        }
+
+        [HttpGet("active-announcements")]
+        public async Task<IActionResult> GetActiveAnnouncements()
+        {
+            try
+            {
+                DateTime now = DateTime.UtcNow;
+
+                var activeAnnouncements = await _context.Announces
+                    .Where(a => a.AnnouncemnetDateTime <= now &&
+                                a.AnnouncementEndDateTime >= now &&
+                                a.IsAnnounced)
+                    .ToListAsync();
+
+                var response = new ApiResponseDto
+                {
+                    IsSuccess = true,
+                    Message = "Fetched active announcements successfully.",
+                    StatusCode = 200,
+                    Data = activeAnnouncements
+                };
+
+                return StatusCode(response.StatusCode, response);
+            }
+            catch (Exception ex)
+            {
+                var errorResponse = new ApiResponseDto
+                {
+                    IsSuccess = false,
+                    Message = $"An error occurred: {ex.Message}",
+                    StatusCode = 500
+                };
+
+                return StatusCode(errorResponse.StatusCode, errorResponse);
+            }
         }
     }
 }
