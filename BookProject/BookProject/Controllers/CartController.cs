@@ -41,7 +41,7 @@ namespace BookProject.Controllers
 
             if (existingItem != null)
             {
-                existingItem.Quantity += request.Quantity;
+                existingItem.Quantity = request.Quantity;
                 _context.Carts.Update(existingItem);
                 await _context.SaveChangesAsync();
 

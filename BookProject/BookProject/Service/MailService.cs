@@ -63,25 +63,30 @@ namespace BookProject.Service
             }
         }
 
-      
+
         public async Task SendStaffMail(string toEmail, string fullName)
         {
             var body = $@"
-                <html>
-                    <body style='font-family: Arial, sans-serif; color: #333;'>
-                        <h2 style='color: #0056b3;'>Hello {fullName},</h2>
-                        <p>You have been registered as staff.</p>
-                        <p>Your temporary password is: 
-                            <span style='font-size: 18px; font-weight: bold; color: #e60000;'>Itahari@2025</span>
-                        </p>
-                        <p>Please change your password after first login.</p>
-                    </body>
-                </html>";
+        <html>
+            <body style='font-family: Arial, sans-serif; color: #333; line-height: 1.6;'>
+                <h2 style='color: #0056b3;'>Dear {fullName},</h2>
+                <p>We are pleased to inform you that you have been successfully registered as staff.</p>
+                <p>Your login details are as follows:</p>
+                <ul>
+                    <li><strong>Password:</strong> <span style='font-size: 18px; font-weight: bold; color: #e60000;'>Itahari@2025</span></li>
+                    <li><strong>Email:</strong> {toEmail}</li>
+                </ul>
+                <p>Please use the provided email and password to log in to the system.</p>
+                <p>If you encounter any issues, feel free to reach out to our support team.</p>
+                <p>Best regards,</p>
+                <p><strong>EBook</strong><br/>Support Team</p>
+            </body>
+        </html>";
 
             var message = new MailMessage
             {
                 From = new MailAddress(_fromEmail),
-                Subject = "Staff Registration",
+                Subject = "Welcome to the Team! Staff Registration Successful",
                 Body = body,
                 IsBodyHtml = true
             };
