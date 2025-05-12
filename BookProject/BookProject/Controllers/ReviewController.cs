@@ -90,9 +90,18 @@ namespace BookProject.Controllers
                     return Ok(new ApiResponseDto { IsSuccess = true, Message = "No reviews found for this book.", StatusCode = 200, Data = new List<GetReviewDto>() });
 
                 var reviewDtos = new List<GetReviewDto>();
+                double totalStars = 0;
+                int starCount = 0;
                 foreach (var review in reviews)
                 {
                     var user = await _userManager.FindByIdAsync(review.UserId);
+
+                    if (review.Star.HasValue)
+                    {
+                        totalStars += review.Star.Value;
+                        starCount++;
+                    }
+
                     reviewDtos.Add(new GetReviewDto
                     {
                         ReviewId = review.Id,
@@ -103,7 +112,10 @@ namespace BookProject.Controllers
                     });
                 }
 
-                return Ok(new ApiResponseDto { IsSuccess = true, Message = "Reviews fetched successfully.", StatusCode = 200, Data = reviewDtos });
+                double averageStar = starCount > 0 ? totalStars / starCount : 0;
+
+                return Ok(new ApiResponseDto { IsSuccess = true, Message = "Reviews fetched successfully.", StatusCode = 200,
+                    Data = new{ reviewDtos, AverageStar = Math.Round(averageStar)} });
             }
             catch (Exception ex)
             {
