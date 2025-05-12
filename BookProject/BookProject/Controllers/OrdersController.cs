@@ -119,57 +119,131 @@ namespace BookProject.Controllers
             return Ok(new ApiResponseDto { IsSuccess = true, StatusCode = 200, Message = $"Order placed successfully. {(messages.Any() ? string.Join(" and ", messages) : "No discount applied.")}", Data = new { order.ClaimCode, Discount = discountAmt } });
         }
 
-     
-        [HttpGet("ListPendingOrders")]
-        public async Task<IActionResult> ListPendingOrders()
-        {
-            var list = await _db.Orders
-                .Where(o => o.Status == "Pending")
-                .Include(o => o.OrderItems)
-                .ToListAsync();
-            return Ok(new ApiResponseDto { IsSuccess = true, StatusCode = 200, Message = "Pending orders.", Data = list });
-        }
 
-       
-        [HttpGet("ListCompletedOrders")]
-        public async Task<IActionResult> ListCompletedOrders()
+
+
+      
+        [HttpGet("GetAllOrders")]
+        public async Task<IActionResult> GetAllOrders()
         {
-            var list = await _db.Orders
-                .Where(o => o.Status == "Completed")
-                .Include(o => o.OrderItems)
-                .ToListAsync();
-            return Ok(new ApiResponseDto { IsSuccess = true, StatusCode = 200, Message = "Completed orders.", Data = list });
+            try
+            {
+                var orders = await _db.Orders
+                    
+                    .Include(o => o.OrderItems)
+                        .ThenInclude(oi => oi.Book)
+                    .ToListAsync();
+
+                var dtoList = orders.Select(order => MapToDto(order)).ToList();
+
+                var response = new ApiResponseDto
+                {
+                    IsSuccess = true,
+                    StatusCode = 200,
+                    Message = "Completed orders retrieved successfully.",
+                    Data = dtoList
+                };
+
+                return StatusCode(response.StatusCode, response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ApiResponseDto
+                {
+                    IsSuccess = false,
+                    StatusCode = 500,
+                    Message = $"An error occurred while retrieving completed orders: {ex.Message}"
+                });
+            }
         }
 
         [HttpGet("GetOrderById")]
         [Authorize(AuthenticationSchemes = "Bearer")]
         public async Task<IActionResult> GetOrderById()
         {
-            var userId = User.FindFirst("userId")?.Value;
-            if (userId == null)
-                return Unauthorized(new ApiResponseDto { IsSuccess = false, Message = "User not found", StatusCode = 401 });
+            var userIdClaim = HttpContext.User.FindFirst("userId");
+            if (userIdClaim == null)
+                return Unauthorized(new ApiResponseDto
+                {
+                    IsSuccess = false,
+                    StatusCode = 401,
+                    Message = "User not found."
+                });
 
-            var orders = await _db.Orders
-                .Where(o => o.UserId == userId)
-                .Include(o => o.OrderItems)
-                .ToListAsync();
+            var userId = userIdClaim.Value;
 
-            return Ok(new ApiResponseDto { IsSuccess = true, StatusCode = 200, Message = "User orders.", Data = orders });
+            try
+            {
+                var orders = await _db.Orders
+                    .Where(o => o.UserId == userId)
+                    .Include(o => o.OrderItems)
+                        .ThenInclude(oi => oi.Book)
+                    .ToListAsync();
+
+                var dtoList = orders.Select(order => MapToDto(order)).ToList();
+
+                return StatusCode(200, new ApiResponseDto
+                {
+                    IsSuccess = true,
+                    StatusCode = 200,
+                    Message = "User orders retrieved successfully.",
+                    Data = dtoList
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ApiResponseDto
+                {
+                    IsSuccess = false,
+                    StatusCode = 500,
+                    Message = $"An error occurred while retrieving your orders: {ex.Message}"
+                });
+            }
         }
 
-       
         [HttpGet("GetOrderByCode/{claimCode}")]
         public async Task<IActionResult> GetOrderByCode(string claimCode)
         {
-            var order = await _db.Orders
-                .Include(o => o.OrderItems)
-                .FirstOrDefaultAsync(o => o.ClaimCode == claimCode);
-            if (order == null)
-                return NotFound(new ApiResponseDto { IsSuccess = false, Message = "Order not found.", StatusCode = 404 });
-            return Ok(new ApiResponseDto { IsSuccess = true, StatusCode = 200, Message = "Order details.", Data = order });
+            try
+            {
+                var order = await _db.Orders
+                    .Where(o => o.ClaimCode == claimCode)
+                    .Include(o => o.OrderItems)
+                        .ThenInclude(oi => oi.Book)
+                    .FirstOrDefaultAsync();
+
+                if (order == null)
+                {
+                    return StatusCode(404, new ApiResponseDto
+                    {
+                        IsSuccess = false,
+                        StatusCode = 404,
+                        Message = "Order not found."
+                    });
+                }
+
+                var dto = MapToDto(order);
+
+                return StatusCode(200, new ApiResponseDto
+                {
+                    IsSuccess = true,
+                    StatusCode = 200,
+                    Message = "Order details retrieved successfully.",
+                    Data = dto
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ApiResponseDto
+                {
+                    IsSuccess = false,
+                    StatusCode = 500,
+                    Message = $"An error occurred while retrieving the order: {ex.Message}"
+                });
+            }
         }
 
-       
+
         [HttpPut("CancelOrder/{orderId}")]
         [Authorize(AuthenticationSchemes = "Bearer")]
         public async Task<IActionResult> CancelOrder(int orderId)
@@ -235,7 +309,31 @@ namespace BookProject.Controllers
 
             return Ok(new ApiResponseDto { IsSuccess = true, StatusCode = 200, Message = "Notifications.", Data = notes });
         }
+
+
+        private GetAllOrderDto MapToDto(Order order)
+        {
+            return new GetAllOrderDto
+            {
+                OrderId = order.OrderId,
+                ClaimCode = order.ClaimCode,
+                Status = order.Status,
+                OrderDate = order.OrderDate,
+                TotalAmount = order.TotalAmount,
+                DiscountApplied = order.DiscountApplied,
+                OrderItems = order.OrderItems.Select(item => new GetOrderItemDto
+                {
+                    BookId = item.Book.BookId,
+                    BookTitle = item.Book.Title,
+                    BookAuthor = item.Book.Author,
+                    Quantity = item.Quantity,
+                    UnitPrice = item.UnitPrice,
+                    Photo = item.Book.BookPhoto
+                }).ToList()
+            };
+        }
     }
+
 }
    
 
