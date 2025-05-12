@@ -41,7 +41,7 @@ namespace BookProject.Controllers
                 }
 
                 // Save Book Photo
-             
+
                 var filepath = await _fileService.SaveFileAsync(addBookDto.BookPhotoFile, "Photos");
                 // Create Book entity
                 var book = new Book
@@ -155,5 +155,46 @@ namespace BookProject.Controllers
             }
         }
 
+
+        [HttpGet("DashboardStats")]
+        public async Task<IActionResult> GetDashboardStats()
+        {
+            try
+            {
+                var totalBooks = await _context.Books.CountAsync();
+                var totalOrders = await _context.Orders.CountAsync();
+
+                // Get all roles
+                var userRoles = await _context.UserRoles.ToListAsync();
+                var roles = await _context.Roles.ToListAsync();
+                var users = await _context.Users.ToListAsync();
+
+                var staffRoleIds = roles
+                    .Where(r =>  r.Name == "Staff")
+                    .Select(r => r.Id)
+                    .ToList();
+
+                var publicUserRoleIds = roles
+                    .Where(r =>  r.Name == "PublicUser")
+                    .Select(r => r.Id)
+                    .ToList();
+
+                var totalStaff = userRoles.Count(ur => staffRoleIds.Contains(ur.RoleId));
+                var totalPublicUsers = userRoles.Count(ur => publicUserRoleIds.Contains(ur.RoleId));
+
+                return Ok(new
+                {
+                    TotalBooks = totalBooks,
+                    TotalOrders = totalOrders,
+                    TotalStaff = totalStaff,
+                    TotalPublicUsers = totalPublicUsers
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = $"An error occurred: {ex.Message}" });
+
+            }
+        }
     }
 }

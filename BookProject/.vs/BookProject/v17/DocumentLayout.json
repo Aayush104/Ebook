@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Books Project\\BookProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\model\\announce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\model\\announce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Books Project\\BookProject\\BookProject\\Migrations\\20250512140819_AnotherColumn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookProject\\Migrations\\20250512140819_AnotherColumn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\model\\announce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\model\\announce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\controllers\\announcementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\service\\announcementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\hubss\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\hubss\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -89,6 +85,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\iservice\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\iservice\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\migrations\\20250512140819_anothercolumn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\migrations\\20250512140819_anothercolumn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 57,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Announce.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Model\\Announce.cs",
               "RelativeDocumentMoniker": "BookProject\\Model\\Announce.cs",
@@ -175,7 +175,8 @@
               "RelativeToolTip": "BookProject\\Controllers\\CartController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAYwB4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T08:39:24.935Z"
+              "WhenOpened": "2025-05-12T08:39:24.935Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -247,8 +248,7 @@
               "RelativeToolTip": "BookProject\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAMwBkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T13:49:17.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T13:49:17.538Z"
             },
             {
               "$type": "Document",
@@ -260,8 +260,7 @@
               "RelativeToolTip": "BookProject\\Dto\\DoAnnouncementDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:19:56.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T11:19:56.886Z"
             },
             {
               "$type": "Document",
@@ -273,8 +272,7 @@
               "RelativeToolTip": "BookProject\\Controllers\\AnnouncementController.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAcwEwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:16:19.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T11:16:19.654Z"
             },
             {
               "$type": "Document",
@@ -290,15 +288,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 0,
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "BookProject\\Controllers\\AdminController.cs",
               "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\AdminController.cs",
               "RelativeToolTip": "BookProject\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwBkAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAAALMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:12:09.586Z"
+              "WhenOpened": "2025-05-11T11:12:09.586Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -314,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "BookProject.csproj",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\BookProject.csproj",
               "RelativeDocumentMoniker": "BookProject\\BookProject.csproj",
@@ -326,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "NotificationHub.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Hubss\\NotificationHub.cs",
               "RelativeDocumentMoniker": "BookProject\\Hubss\\NotificationHub.cs",
@@ -338,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "IMailService.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\IService\\IMailService.cs",
               "RelativeDocumentMoniker": "BookProject\\IService\\IMailService.cs",
@@ -376,15 +375,23 @@
         },
         {
           "DockedHeight": 15,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 21,
               "Title": "20250512140819_AnotherColumn.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Migrations\\20250512140819_AnotherColumn.cs",
               "RelativeDocumentMoniker": "BookProject\\Migrations\\20250512140819_AnotherColumn.cs",
@@ -394,14 +401,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T14:08:19.476Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }
