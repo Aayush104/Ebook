@@ -18,8 +18,14 @@ var builder = WebApplication.CreateBuilder(args);
 Env.Load();
 
 
-builder.Services.AddControllers();
+
 builder.Services.AddSignalR();
+
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+    });
 
 builder.Services.AddScoped<IMailService, MailService>();
 builder.Services.AddScoped<IOtpService, OtpService>();
