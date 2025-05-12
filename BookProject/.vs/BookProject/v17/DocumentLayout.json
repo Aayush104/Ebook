@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Books Project\\BookProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\dto\\staffupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\dto\\staffupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|d:\\books project\\bookproject\\bookproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E952392D-5445-4E5C-B925-CBB6C215A0AF}|BookProject\\BookProject.csproj|solutionrelative:bookproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -66,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 69,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,7 +94,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "StaffUpdateDto.cs",
+              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Dto\\StaffUpdateDto.cs",
+              "RelativeDocumentMoniker": "BookProject\\Dto\\StaffUpdateDto.cs",
+              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Dto\\StaffUpdateDto.cs",
+              "RelativeToolTip": "BookProject\\Dto\\StaffUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T05:31:55.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "BookProject\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\UserController.cs",
+              "RelativeToolTip": "BookProject\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAkwKMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T05:19:30.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Model\\OrderItem.cs",
               "RelativeDocumentMoniker": "BookProject\\Model\\OrderItem.cs",
@@ -94,12 +128,11 @@
               "RelativeToolTip": "BookProject\\Model\\OrderItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T04:42:54.784Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T04:42:54.784Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Model\\Order.cs",
               "RelativeDocumentMoniker": "BookProject\\Model\\Order.cs",
@@ -107,12 +140,11 @@
               "RelativeToolTip": "BookProject\\Model\\Order.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T04:42:51.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T04:42:51.777Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "OrderItemDto.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Dto\\OrderItemDto.cs",
               "RelativeDocumentMoniker": "BookProject\\Dto\\OrderItemDto.cs",
@@ -120,12 +152,11 @@
               "RelativeToolTip": "BookProject\\Dto\\OrderItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T04:41:41.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T04:41:41.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "BookProject\\Data\\AppDbContext.cs",
@@ -133,12 +164,11 @@
               "RelativeToolTip": "BookProject\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAcwFAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T13:49:17.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T13:49:17.538Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DoAnnouncementDto.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Dto\\DoAnnouncementDto.cs",
               "RelativeDocumentMoniker": "BookProject\\Dto\\DoAnnouncementDto.cs",
@@ -150,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "AnnouncementController.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\AnnouncementController.cs",
               "RelativeDocumentMoniker": "BookProject\\Controllers\\AnnouncementController.cs",
@@ -162,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "AnnouncementService.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Service\\AnnouncementService.cs",
               "RelativeDocumentMoniker": "BookProject\\Service\\AnnouncementService.cs",
@@ -174,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "BookProject\\Controllers\\AdminController.cs",
@@ -186,20 +216,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Program.cs",
               "RelativeDocumentMoniker": "BookProject\\Program.cs",
               "ToolTip": "D:\\Books Project\\BookProject\\BookProject\\Program.cs",
               "RelativeToolTip": "BookProject\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T11:09:33.696Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "BookProject.csproj",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\BookProject.csproj",
               "RelativeDocumentMoniker": "BookProject\\BookProject.csproj",
@@ -211,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "NotificationHub.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Hubss\\NotificationHub.cs",
               "RelativeDocumentMoniker": "BookProject\\Hubss\\NotificationHub.cs",
@@ -223,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "IMailService.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\IService\\IMailService.cs",
               "RelativeDocumentMoniker": "BookProject\\IService\\IMailService.cs",
@@ -235,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "MailService.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Service\\MailService.cs",
               "RelativeDocumentMoniker": "BookProject\\Service\\MailService.cs",
@@ -247,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "D:\\Books Project\\BookProject\\BookProject\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "BookProject\\Controllers\\OrdersController.cs",
@@ -255,8 +285,7 @@
               "RelativeToolTip": "BookProject\\Controllers\\OrdersController.cs",
               "ViewState": "AgIAAIsAAAAAAAAAAAAkwKEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:02:47.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T11:02:47.626Z"
             }
           ]
         },

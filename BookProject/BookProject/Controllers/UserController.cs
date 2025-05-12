@@ -1,9 +1,11 @@
-﻿using BookProject.Dto;
+﻿using BookProject.Data;
+using BookProject.Dto;
 using BookProject.IService;
 using BookProject.Model;
 using BookProject.Service;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net;
@@ -21,20 +23,21 @@ namespace BookProject.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IMailService _mailService;
         private readonly IOtpService _otpService;
-      
+      private readonly AppDbContext _appDbContext;
 
         public UserController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             IMailService mailService,
-            IOtpService otpService
+            IOtpService otpService,
+            AppDbContext appDbContext
            )
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _mailService = mailService;
             _otpService = otpService;
-            
+            _appDbContext = appDbContext;
         }
 
         [HttpPost("UserRegistration")]
@@ -153,6 +156,18 @@ namespace BookProject.Controllers
                 });
             }
 
+            if (!user.EmailConfirmed && role == "Staff")
+            {
+
+
+                return Unauthorized(new ApiResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "Your account has been disabled by the administrator.",
+                    StatusCode = 401
+                });
+            }
+
             var token = GenerateToken(user, roles.ToList());
 
 
@@ -184,7 +199,8 @@ namespace BookProject.Controllers
                 FullName = staffDto.FullName,
                 Email = staffDto.Email,
                 UserName = staffDto.Email,
-                PhoneNumber = staffDto.PhoneNumber
+                PhoneNumber = staffDto.PhoneNumber,
+                EmailConfirmed = true
                 
             };
 
@@ -213,6 +229,197 @@ namespace BookProject.Controllers
                 Message = "Staff created with default password.",
                 StatusCode = 200
             });
+        }
+
+
+        [HttpGet("GetAllStaff")]
+        public async Task<IActionResult> GetAllStaff()
+        {
+            try
+            {
+                var staff = await _userManager.GetUsersInRoleAsync("Staff");
+
+                var result = staff.Select(user => new
+                {
+                    StaffId = user.Id,
+                    StaffName = user.FullName,
+                    Email = user.Email,
+                    PhoneNumber = user.PhoneNumber
+                }).ToList();
+
+                return Ok(new
+                {
+                    IsSuccess = true,
+                    Message = "Staff fetched successfully.",
+                    StatusCode = 200,
+                    Data = result
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    IsSuccess = false,
+                    Message = $"An error occurred while fetching staff. {ex.Message}",
+                    StatusCode = 500
+                });
+            }
+        }
+
+      
+        [HttpGet("GetStaffById/{userId}")]
+        public async Task<IActionResult> GetStaffById(string userId)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(userId))
+                {
+                    return BadRequest(new
+                    {
+                        IsSuccess = false,
+                        Message = "User ID is required.",
+                        StatusCode = 400
+                    });
+                }
+
+                var user = await _userManager.FindByIdAsync(userId);
+                if (user == null)
+                {
+                    return NotFound(new
+                    {
+                        IsSuccess = false,
+                        Message = "User not found.",
+                        StatusCode = 404
+                    });
+                }
+
+                var staffDetails = new
+                {
+                    StaffId = user.Id,
+                    StaffName = user.FullName,
+                    Email = user.Email,
+                    PhoneNumber = user.PhoneNumber,
+                 FullName = user.FullName,  
+                };
+
+                return Ok(new
+                {
+                    IsSuccess = true,
+                    Message = "Staff details fetched successfully.",
+                    StatusCode = 200,
+                    Data = staffDetails
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    IsSuccess = false,
+                    Message = $"An error occurred while fetching staff. {ex.Message}",
+                    StatusCode = 500
+                });
+            }
+        }
+
+     
+        [HttpPut("SetStaffStatus/{userId}")]
+        public async Task<IActionResult> SetStaffStatus(string userId)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(userId))
+                {
+                    return BadRequest(new
+                    {
+                        IsSuccess = false,
+                        Message = "User ID is required.",
+                        StatusCode = 400
+                    });
+                }
+
+                var user = await _userManager.FindByIdAsync(userId);
+                if (user == null)
+                {
+                    return NotFound(new
+                    {
+                        IsSuccess = false,
+                        Message = "User not found.",
+                        StatusCode = 404
+                    });
+                }
+
+                user.EmailConfirmed = !user.EmailConfirmed;
+
+                _appDbContext.Users.Update(user);
+                await _appDbContext.SaveChangesAsync();
+
+                return Ok(new
+                {
+                    IsSuccess = true,
+                    Message = $"EmailConfirmed status has been set to {user.EmailConfirmed}.",
+                    StatusCode = 200
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    IsSuccess = false,
+                    Message = $"An error occurred while updating the staff status. {ex.Message}",
+                    StatusCode = 500
+                });
+            }
+        }
+
+        [HttpPut("UpdateStaff")]
+        public async Task<IActionResult> UpdateStaff([FromBody] StaffUpdateDto staffDto)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(staffDto.UserId))
+                {
+                    return BadRequest(new ApiResponseDto
+                    {
+                        IsSuccess = false,
+                        Message = "User ID is required.",
+                        StatusCode = 400
+                    });
+                }
+
+                var user = await _userManager.FindByIdAsync(staffDto.UserId);
+                if (user == null)
+                {
+                    return NotFound(new ApiResponseDto
+                    {
+                        IsSuccess = false,
+                        Message = "User not found.",
+                        StatusCode = 404
+                    });
+                }
+
+                user.FullName = staffDto.FullName ?? user.FullName;
+                user.PhoneNumber = staffDto.PhoneNumber ?? user.PhoneNumber;
+                user.Address = staffDto.Address ?? user.Address;
+
+                _appDbContext.Users.Update(user);
+                await _appDbContext.SaveChangesAsync();
+
+                return Ok(new ApiResponseDto
+                {
+                    IsSuccess = true,
+                    Message = "Staff details updated successfully.",
+                    StatusCode = 200
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ApiResponseDto
+                {
+                    IsSuccess = false,
+                    Message = $"An error occurred while updating staff details. {ex.Message}",
+                    StatusCode = 500
+                });
+            }
         }
 
         private string GenerateToken(ApplicationUser user, List<string> roles)
@@ -246,6 +453,9 @@ namespace BookProject.Controllers
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
+
+
 
     }
 }
